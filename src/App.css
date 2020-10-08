@@ -8,9 +8,10 @@
 }
 
 .container {
-  background: linear-gradient(100deg, rgb(182, 40, 111) 50%, #ac2066 0);
+  background: linear-gradient(100deg, #2980b9, #2c3e50);
+  min-width: 350px;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,9 +19,10 @@
 
 .app-wrapper {
   background-color: #292f38;
-  width: 25%;
-  min-width: 450px;
-  height: 600px;
+  width: 90%;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  min-height: 90vh;
   padding: 30px;
   box-sizing: border-box;
   border-radius: 5px;
@@ -31,7 +33,7 @@
   color: #ccc;
   font-weight: 300;
   text-align: center;
-  margin: 50px 20px 60px 20px;
+  margin: 30px 20px 40px 20px;
   font-family: "Josefin Slab", serif;
 }
 
@@ -39,8 +41,8 @@
   display: flex;
   flex-direction: column;
   align-items: space-between;
-  margin-bottom: 50px;
   width: 100%;
+  height: 100vh;
 }
 
 .form {
@@ -52,15 +54,17 @@
 }
 
 .list {
-  width: 90%;
+  padding-top: 2rem;
+  width: 100%;
+  height: 100%;
   margin: auto;
-  max-height: 300px;
-  overflow: hidden;
   overflow-y: auto;
 }
 
 /* width */
 ::-webkit-scrollbar {
+  border-radius: 10px;
+  background-color: #aaa;
   width: 10px;
 }
 
@@ -77,18 +81,19 @@
 }
 
 .task-input {
-  width: 350px;
+  width: inherit;
   min-width: 250px;
   padding: 15px 10px 10px 20px;
   margin-right: 10px;
   font-family: "Josefin Sans", serif;
   font-size: 15px;
   color: #ccc;
-  background-color: #1d222b;
+  background-color: #212f3d;
   border: 1px solid #444;
   outline: none;
   border-radius: 20px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
 }
 
 .buttons {
@@ -101,7 +106,7 @@
 
 .add-task-btn {
   min-width: 100px;
-  background-color: #790e43;
+  background: #104e8c;
   color: #ccc;
   border: none;
   font-family: "Montserrat", sans-serif;
@@ -110,17 +115,19 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   outline: none;
   cursor: pointer;
+  line-height: 2rem;
 }
 
 .list-item {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
   padding-bottom: 5px;
 }
 
 .list-item span {
   color: #999;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
 }
 
 .task-btn {
@@ -131,13 +138,13 @@
 }
 
 .btn-delete i {
-  font-size: 16px;
+  font-size: 1.2rem;
   color: #bbb;
   margin-right: 20px;
 }
 
 .btn-edit i {
-  font-size: 16px;
+  font-size: 1.2rem;
   color: #bbb;
   margin-right: 20px;
 }
@@ -149,7 +156,7 @@
   color: #ccc;
   border: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   outline: none;
@@ -159,6 +166,6 @@
 .no-tasks {
   color: #777;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.2rem;
   margin-top: 20px;
 }

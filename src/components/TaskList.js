@@ -4,7 +4,7 @@ import { TaskListContext } from "../context/TaskListContext";
 const TaskList = () => {
   const { tasks } = useContext(TaskListContext);
   return (
-    <div>
+    <>
       {tasks.length ? (
         <ul className="list">
           {tasks.map((task) => {
@@ -14,7 +14,7 @@ const TaskList = () => {
       ) : (
         <div class="no-tasks">NoTasks</div>
       )}
-    </div>
+    </>
   );
 };
 
